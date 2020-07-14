@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="tr">
+
+  <head>
+
+ <meta charset="utf-8">
+    <title>Ekip Kurma - Üretken Akademi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Üretken Akademi ile kendini yazılım, pazarlama, tasarım gibi alanlarda geliştir.">
+    <!-- Begin loading animation -->
+    <link href="https://cdn.uretkenakademi.com/assets/css/loaders/loader-pulse.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- End loading animation -->
+    <link href="https://cdn.uretkenakademi.com/assets/css/theme.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,600,700&display=swap" rel="stylesheet">
+    <style>
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+      .custom-navbar {
+        background: white;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+      .custom-navbar-menu-item {
+        font-family: Nunito;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        margin-left: 5px;
+        /* identical to box height */
+
+        display: flex;
+        align-items: center;
+
+        /* Text/Default */
+
+        color: #8FA4BD;
+      }
+      .custom-progress-bar {
+        height: 15px;
+        width: 100vw;
+        background: #E6F5F1;
+      }
+      .custom-progress-bar-iterator {
+        height: 15px;
+        width: 15vw;
+        position: relative;
+        background: #019A72;
+      }
+      .custom-progress-bar-text {
+        font-family: Nunito;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 14px;
+        line-height: 19px;
+        display: flex;
+        align-items: center;
+        padding-right: 10px;
+        color: #FFFFFF;
+      }
+      .btn-custom {
+        display: inline-block;
+        align-items: center;
+        font-family: Nunito;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        border: 1px solid #E0E7EF;
+        border-radius: 5px;
+        /* Text/Default */
+
+        color: #8FA4BD;
+      }
+      .btn-custom > span {
+      }
+      .btn-green {
+        background-color: #019A72;
+        color: white;
+      }
+      .btn-green:hover {
+        background-color: #019A72;
+        color: white;
+      }
+      .info-button > span{
+        margin-left: 5px;
+        font-family: Nunito;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        /* identical to box height */
+
+        display: flex;
+        align-items: center;
+
+        /* Text/Default */
+
+        color: #8FA4BD;
+      }
+    </style>
+    <script>(function(c,a){if(!a.__SV){var b=window;try{var d,m,j,k=b.location,f=k.hash;d=function(a,b){return(m=a.match(RegExp(b+"=([^&]*)")))?m[1]:null};f&&d(f,"state")&&(j=JSON.parse(decodeURIComponent(d(f,"state"))),"mpeditor"===j.action&&(b.sessionStorage.setItem("_mpcehash",f),history.replaceState(j.desiredHash||"",c.title,k.pathname+k.search)))}catch(n){}var l,h;window.mixpanel=a;a._i=[];a.init=function(b,d,g){function c(b,i){var a=i.split(".");2==a.length&&(b=b[a[0]],i=a[1]);b[i]=function(){b.push([i].concat(Array.prototype.slice.call(arguments,
+      0)))}}var e=a;"undefined"!==typeof g?e=a[g]=[]:g="mixpanel";e.people=e.people||[];e.toString=function(b){var a="mixpanel";"mixpanel"!==g&&(a+="."+g);b||(a+=" (stub)");return a};e.people.toString=function(){return e.toString(1)+".people (stub)"};l="disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
+      for(h=0;h<l.length;h++)c(e,l[h]);var f="set set_once union unset remove delete".split(" ");e.get_group=function(){function a(c){b[c]=function(){call2_args=arguments;call2=[c].concat(Array.prototype.slice.call(call2_args,0));e.push([d,call2])}}for(var b={},d=["get_group"].concat(Array.prototype.slice.call(arguments,0)),c=0;c<f.length;c++)a(f[c]);return b};a._i.push([b,d,g])};a.__SV=1.2;b=c.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?
+      MIXPANEL_CUSTOM_LIB_URL:"file:"===c.location.protocol&&"//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js";d=c.getElementsByTagName("script")[0];d.parentNode.insertBefore(b,d)}})(document,window.mixpanel||[]);
+      mixpanel.init("db3f4025478e49c0425c79061aae48a2", {batch_requests: true})</script>
+      <script>
+        !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var t=analytics.methods[e];analytics[t]=analytics.factory(t)}analytics.load=function(e,t){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://cdn.segment.com/analytics.js/v1/"+e+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=t};analytics.SNIPPET_VERSION="4.1.0";
+        analytics.load("BXKaejdeVxZP7rOUqR5YTWvnlNdWTYZN");
+        analytics.page();
+        }}();
+      </script>
+      <script src='//cdn.freshmarketer.com/646385/1692460.js'></script>
+  </head>
+
+  <body>
+    <div class="custom-navbar">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 d-flex align-items-center">
+            <img src="https://uretkenakademi.com/assets/img/logos/uretkenLogoGreen.svg" class="img-responsive" height="40"  alt="Üretken Akademi" data-inject-svg>
+        </div>
+          <div class="col-md-8 d-flex align-items-center">
+            <a href="../../covid-levellist.html" ><div href="../../covid-levellist.html" class="d-flex align-items-center justify-items-center">
+              <img src="https://uretkenakademi.com/assets/img/home-icon.svg" height="30"  alt="Anasayfa" data-inject-svg>
+              <span class="custom-navbar-menu-item">Anasayfa</span>
+            </div>
+          </div></a>
+         <a href="https://uretkenakademi.com/covid19startup.html"> <div class="col-md-1 d-flex align-items-center justify-content-end">
+            <img src="https://cdn.uretkenakademi.com/assets/img/logos/T3.png" width="100" alt="T3 Vakfı Girişim Merkezi" /> </a>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="custom-progress-bar d-flex">
+      <div class="custom-progress-bar-iterator d-flex align-items-center justify-content-end">
+        <span class="custom-progress-bar-text">%15</span>
+      </div>
+    </div>
+        <div class="container">
+      <div class="row mt-3">
+        <div class="col-md-6">
+          <a href="./uretkenolmak-2-2.html" ><div class="btn btn-default btn-custom">
+            <img src="https://cdn.uretkenakademi.com/assets/img/btn-left.png" width="24" height="24" alt="Geri" />
+            <span>Geri</span>
+          </div>
+          </a>
+        </div>
+        <div class="col-md-6 d-flex align-items-center justify-content-end">
+          <div class="d-flex align-items-center mr-4 info-button" data-container="body" data-toggle="popover" data-placement="top" data-content="Bu adımda ipucu bulunmuyor.">
+            <img src="https://cdn.uretkenakademi.com/assets/img/info.png" width="24" height="24" alt="Ipucu">
+            <span>İpucu</span>
+          </div>
+          <a href="./uretkenolmak-2-4.html"> <div class="btn btn-default btn-custom">
+            <span>İleri</span>
+                    <a href="./uretkenolmak-2-4.html">
+            <img src="https://cdn.uretkenakademi.com/assets/img/btn-left-dark.png" alt="Icon">
+          </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <section class="bg-white o-hidden">
+
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-8 col-lg-9 col-md-11">
+
+
+            <div class="text-center"><h4></h4></div>
+            <p></p>
+            <div class="card card-body shadow mt-md-5" id="apply-form">
+
+              <form  action="https://getform.io/f/70dc90bf-c3b6-4820-83d5-a092f8f41b5f"  method="POST">
+                <div class="form-row">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+
+
+
+                </div>
+                <div class="form-group">
+                  <label class="text-dark" for="job-message">Girişimcilik denince genel bilinenlerin aksine senin aklına ilk ne geliyor, hadi bizimle paylaş!</label>
+                  <div id="myModal" class="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+                    <div class="modal fade" id="basicExampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          ...
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+                    <!-- Üretken POPUP -->
+                    <div class="modal-content" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      
+                      <span class="close">&times;</span>
+                      <img src="https://uretkenakademi.com/assets/img/icons/interface/icon-arrow-up.svg" alt="..." class="img-thumbnail">
+                      <p class="text-justify">Ambitioni dedisse scripm. ientis piroius Galliae in diem certam indicere. Cras mattis iudicium purus sit amet fermentum.</p>
+                      <div class="modal-footer">
+                        <button class="btn btn-dark btn-sm"  id="myBtns" type="submit">Gönder</button>
+                      </div>
+
+                    </div>
+                  
+
+
+
+
+                  </div>  
+                  <textarea class="form-control" name="message1" id="job-message" rows="3" placeholder="Buraya yaz"></textarea>
+                </div>
+                <div class="form-group">
+
+                </div>
+                <div class="form-group">
+
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                  <div class="custom-control custom-checkbox mb-3 mb-md-0">
+
+                  </div>
+                  <button class="btn btn-dark"  id="myBtn" type="button">Gönder</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <a href="#top" class="btn btn-primary rounded-circle btn-back-to-top" data-smooth-scroll data-aos="fade-up" data-aos-offset="2000" data-aos-mirror="true" data-aos-once="false">
+      <img src="https://uretkenakademi.com/assets/img/icons/interface/icon-arrow-up.svg" alt="Icon" class="icon bg-white" data-inject-svg>
+    </a>
+    <!-- Required vendor scripts (Do not remove) -->
+    <script type="text/javascript" src="https://cdn.uretkenakademi.com/assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.uretkenakademi.com/assets/js/popper.min.js"></script>
+    <script type="text/javascript" src="https://cdn.uretkenakademi.com/assets/js/bootstrap.js"></script>
+
+    <!-- Optional Vendor Scripts (Remove the plugin script here and comment initializer script out of index.js if site does not use that feature) -->
+
+    <!-- AOS (Animate On Scroll - animates elements into view while scrolling down) -->
+    <script type="text/javascript" src="https://cdn.uretkenakademi.com/assets/js/aos.js"></script>
+    <!-- Clipboard (copies content from browser into OS clipboard) -->
+    <script type="text/javascript" src="https://cdn.uretkenakademi.com/assets/js/clipboard.min.js"></script>
+    <!-- Fancybox (handles image and video lightbox and galleries) -->
+    <script type="text/javascript" src="https://cdn.uretkenakademi.com/assets/js/jquery.fancybox.min.js"></script>
+    <!-- Flatpickr (calendar/date/time picker UI) -->
+    <script type="text/javascript" src="https://cdn.uretkenakademi.com/assets/js/flatpickr.min.js"></script>
+    <!-- Flickity (handles touch enabled carousels and sliders) -->
+    <script type="text/javascript" src="https://cdn.uretkenakademi.com/assets/js/flickity.pkgd.min.js"></script>
+    <!-- Ion rangeSlider (flexible and pretty range slider elements) -->
+    <script type="text/javascript" src="https://cdn.uretkenakademi.com/assets/js/ion.rangeSlider.min.js"></script>
+    <!-- Isotope (masonry layouts and filtering) -->
+    <script type="text/javascript" src="https://cdn.uretkenakademi.com/assets/js/isotope.pkgd.min.js"></script>
+    <!-- jarallax (parallax effect and video backgrounds) -->
+    <script type="text/javascript" src="https://cdn.uretkenakademi.com/assets/js/jarallax.min.js"></script>
+    <script type="text/javascript" src="https://cdn.uretkenakademi.com/assets/js/jarallax-video.min.js"></script>
+    <script type="text/javascript" src="https://cdn.uretkenakademi.com/assets/js/jarallax-element.min.js"></script>
+    <!-- jQuery Countdown (displays countdown text to a specified date) -->
+    <script type="text/javascript" src="https://cdn.uretkenakademi.com/assets/js/jquery.countdown.min.js"></script>
+    <!-- jQuery smartWizard facilitates steppable wizard content -->
+    <script type="text/javascript" src="https://cdn.uretkenakademi.com/assets/js/jquery.smartWizard.min.js"></script>
+    <!-- Plyr (unified player for Video, Audio, Vimeo and Youtube) -->
+    <script type="text/javascript" src="https://cdn.uretkenakademi.com/assets/js/plyr.polyfilled.min.js"></script>
+    <!-- Prism (displays formatted code boxes) -->
+    <script type="text/javascript" src="https://cdn.uretkenakademi.com/assets/js/prism.js"></script>
+    <!-- ScrollMonitor (manages events for elements scrolling in and out of view) -->
+    <script type="text/javascript" src="https://cdn.uretkenakademi.com/assets/js/scrollMonitor.js"></script>
+    <!-- Smooth scroll (animation to links in-page)-->
+    <script type="text/javascript" src="https://cdn.uretkenakademi.com/assets/js/smooth-scroll.polyfills.min.js"></script>
+    <!-- SVGInjector (replaces img tags with SVG code to allow easy inclusion of SVGs with the benefit of inheriting colors and styles)-->
+    <script type="text/javascript" src="https://cdn.uretkenakademi.com/assets/js/svg-injector.umd.production.js"></script>
+    <!-- TwitterFetcher (displays a feed of tweets from a specified account)-->
+    <script type="text/javascript" src="https://cdn.uretkenakademi.com/assets/js/twitterFetcher_min.js"></script>
+    <!-- Typed text (animated typing effect)-->
+    <script type="text/javascript" src="https://cdn.uretkenakademi.com/assets/js/typed.min.js"></script>
+    <!-- Required theme scripts (Do not remove) -->
+    <script type="text/javascript" src="https://cdn.uretkenakademi.com/assets/js/theme.js"></script>
+    <!-- Removes page load animation when window is finished loading -->
+    <script type="text/javascript">
+      window.addEventListener("load",function(){document.querySelector('body').classList.add('loaded');});
+    </script>
+    <script>
+
+
+
+var modal = document.getElementById("myModal");
+
+var btn = document.getElementById("myBtn");
+
+var span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+if(koşul) {
+    // koşul doğru-true ise çalıştırılacak kod bloğu
+} else {
+    // koşul yanlış-false ise çalıştırılacak kod bloğu
+}
+
+
+     
+      function initFreshChat() {
+        window.fcWidget.init({
+          token: "a17f0565-781b-4967-a35f-11d7def999ae",
+          host: "https://wchat.eu.freshchat.com"
+        });
+      }
+      function initialize(i,t){var e;i.getElementById(t)?initFreshChat():((e=i.createElement("script")).id=t,e.async=!0,e.src="https://wchat.eu.freshchat.com/js/widget.js",e.onload=initFreshChat,i.head.appendChild(e))}function initiateCall(){initialize(document,"freshchat-js-sdk")}window.addEventListener?window.addEventListener("load",initiateCall,!1):window.attachEvent("load",initiateCall,!1);
+    </script>
+  </body>
+
+</html>
