@@ -208,7 +208,7 @@
             <p></p>
             <div class="card card-body shadow mt-md-5" id="apply-form">
 
-              <form  action="https://getform.io/f/70dc90bf-c3b6-4820-83d5-a092f8f41b5f"  method="POST">
+              <form  target="_blank" action="https://getform.io/f/70dc90bf-c3b6-4820-83d5-a092f8f41b5f" id="myForm" method="POST">
                 <div class="form-row">
                   <div class="col-sm-6">
                     <div class="form-group">
@@ -235,36 +235,32 @@
                     <div class="modal-dialog" role="document">
                       <div class="modal-content">
                         <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                          <h5 class="modal-title" id="exampleModalLabel"></h5>
                           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                           </button>
                         </div>
                         <div class="modal-body">
-                          ...
                         </div>
-                        
                       </div>
                     </div>
                   </div>
 
                     <!-- Üretken POPUP -->
                     <div class="modal-content" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                      
                       <span class="close">&times;</span>
-                      <img src="https://uretkenakademi.com/assets/img/icons/interface/icon-arrow-up.svg" alt="..." class="img-thumbnail">
-                      <p class="text-justify">Ambitioni dedisse scripm. ientis piroius Galliae in diem certam indicere. Cras mattis iudicium purus sit amet fermentum.</p>
+
+                      <h3 class="text-center">Tebrikler! Cevabını kaydetmek için tıkla.</h3>
                       <div class="modal-footer">
-                        <button class="btn btn-dark btn-sm"  id="myBtns" type="submit">Gönder</button>
+                         <button   onclick="window.location = 'http:/www.google.com.tr/'" class="btn btn-dark" id="myBtns" type="submit">Gönder</button> 
                       </div>
 
                     </div>
-                  
 
 
 
 
-                  </div>  
+                  </div>
                   <textarea class="form-control" name="message1" id="job-message" rows="3" placeholder="Buraya yaz"></textarea>
                 </div>
                 <div class="form-group">
@@ -277,7 +273,7 @@
                   <div class="custom-control custom-checkbox mb-3 mb-md-0">
 
                   </div>
-                  <button class="btn btn-dark"  id="myBtn" type="button">Gönder</button>
+                  <button class="btn btn-dark"  id="myBtn" type="button">Kaydet</button>
                 </div>
               </form>
             </div>
@@ -340,7 +336,13 @@
     </script>
     <script>
 
+function myFunction() {
 
+   document.getElementById("myForm").submit();
+
+return false;
+    
+}
 
 var modal = document.getElementById("myModal");
 
@@ -364,7 +366,7 @@ window.onclick = function(event) {
 if(koşul) {
     // koşul doğru-true ise çalıştırılacak kod bloğu
 } else {
-    // koşul yanlış-false ise çalıştırılacak kod bloğu
+    // koşul yanlış-false ise çalıştırılacak kod bloğu
 }
 
 
